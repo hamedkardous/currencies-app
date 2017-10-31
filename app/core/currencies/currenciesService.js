@@ -56,8 +56,7 @@
         function addCurrency(data) {
             var newCurrency = {
                 'id': currencies.length + 1,
-                'label': data.label,
-                'deleted': false,
+                'label': data.newCurrency,
                 'value': data.value
             };
 
