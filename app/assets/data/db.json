@@ -1,0 +1,23 @@
+{
+    "currencies": [{
+            "id": 1,
+            "label": "euro",
+            "value": 3
+        },
+        {
+            "id": 2,
+            "label": "DNT",
+            "value": 2
+        },
+        {
+            "id": 3,
+            "label": "dollar",
+            "value": 4
+        },
+        {
+            "id": 4,
+            "label": "livres",
+            "value": 1
+        }
+    ]
+}

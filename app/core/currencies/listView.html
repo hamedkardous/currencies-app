@@ -1,0 +1,41 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Currency list</h3>
+    </div>
+    <div class="panel-body">
+        <!--filter for existing currencies-->
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input id="search" type="search" class="form-control" placeholder="Search..." data-ng-model="search">
+        </div>
+        <!--list of existing currencies-->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="col-xs-1">No.</th>
+                        <th class="col-xs-7">Label</th>
+                        <th class="col-xs-1">Value</th>
+                        <th class="col-xs-1"></th>
+                    </tr>
+                </thead>
+                <tr data-ng-repeat="currency in CLC.currencies| filter: search" class="repeat-animation">
+                    <td>{{$index + 1}}. </td>
+                    <td><span ui-sref="root.currencies.currency.update({'currencyId':currency.id})" title="open details">{{currency.label}}</span></td>
+                    <td><span>{{currency.value}}</span></td>
+                    <td>
+                        <button id="delete-btn" class="btn btn-danger btn-sm" data-ng-click="CLC.remove($index)">
+                            Delete<span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <button id="add-btn" data-ui-sref="root.currencies.new" class="btn btn-success">
+            Add Currency <span class="glyphicon glyphicon-plus"></span></button>
+    </div>
+</div>

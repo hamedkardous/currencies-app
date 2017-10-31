@@ -1,0 +1,21 @@
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Update Currency</h3>
+    </div>
+    <div class="panel-body">
+        <form name="form" data-ng-submit="CUC.updateCurrency()">
+            <!--label-->
+            <div class="form-group">
+                <label class="control-label" for="currencyLabel">Label:</label>
+                <input id="currency-label" class="form-control" name="currencyLabel" type="text" data-ng-model="CUC.formData.label" required />
+            </div>
+            <!--value-->
+            <div class="form-group">
+                <label class="control-label" for="currencyValue">Value:</label>
+                <input id="currency-value" class="form-control" name="currencyValue" type="numeric" data-ng-model="CUC.formData.value" required />
+            </div>
+            <!--update button-->
+            <button id="add-btn" class="btn btn-success" data-ng-disabled="form.$invalid">Update <span class="glyphicon glyphicon-ok"></span></button>
+        </form>
+    </div>
+</div>

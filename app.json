@@ -1,0 +1,20 @@
+{
+    "name": "currencies.app",
+    "description": "Currencies CRUD App based on John Papa's style guide",
+    "keywords": [
+        "AngularJS",
+        "angular",
+        "template",
+        "sample",
+        "currencies",
+        "seed",
+        "hamedkardous",
+        "johnpapa",
+        "styleguide",
+        "node",
+        "express"
+    ],
+    "repository": "https://github.com/hamedkardous/currencies-app",
+    "success_url": "/",
+    "addons": []
+}

@@ -1,0 +1,43 @@
+{
+    "name": "currencies.app",
+    "description": "Currencies CRUD App based on John Papa's style guide",
+    "license": "MIT",
+    "keywords": [
+        "AngularJS",
+        "angular",
+        "template",
+        "sample",
+        "currencies",
+        "seed",
+        "hamedkardous",
+        "johnpapa",
+        "styleguide",
+        "node",
+        "express"
+    ],
+    "authors": [
+        "Hamed Kardous"
+    ],
+    "homepage": "https://github.com/hamedkardous/currencies-app",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hamedkardous/currencies-app.git"
+    },
+    "scripts": {
+        "preinstall": "",
+        "postinstall": "",
+        "preuninstall": ""
+    },
+    "ignore": [],
+    "dependencies": {
+        "angular": "^1.5.7",
+        "angular-animate": "^1.5.7",
+        "angular-mocks": "^1.5.7",
+        "angular-ui-router": "^0.3.1",
+        "bootstrap": "^3.3.6",
+        "jquery-ui": "^1.11.4",
+        "lodash": "^4.17.4",
+        "restangular": "^1.6.1"
+    },
+    "private": false
+}
